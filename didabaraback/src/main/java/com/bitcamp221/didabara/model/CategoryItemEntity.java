@@ -7,6 +7,7 @@ import lombok.Setter;
 import org.hibernate.annotations.ColumnDefault;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.GenericGenerator;
+import org.springframework.data.annotation.CreatedDate;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -41,7 +42,6 @@ public class CategoryItemEntity {
   private String content;
 
   @Column(name = "uploaded_date", nullable = false, updatable = false)
-  @CreationTimestamp
+  @CreatedDate
   private LocalDate upLocalDate;
-
 }
