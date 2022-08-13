@@ -29,4 +29,7 @@ public class CategoryEntity {
 
   @Column(name = "invite_code", nullable = false)
   private String inviteCode;
+
+  @Column(name = "content", nullable = false)
+  private String content;
 }
