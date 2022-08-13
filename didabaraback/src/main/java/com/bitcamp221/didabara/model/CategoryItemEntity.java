@@ -4,6 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.ColumnDefault;
+import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -31,4 +33,15 @@ public class CategoryItemEntity {
 
   @Column(name = "expired_date", nullable = false)
   private LocalDate expiredDate;
+
+  @Column(name = "title", nullable = false)
+  private String title;
+
+  @Column(name = "content", nullable = false)
+  private String content;
+
+  @Column(name = "uploaded_date", nullable = false, updatable = false)
+  @CreationTimestamp
+  private LocalDate upLocalDate;
+
 }
