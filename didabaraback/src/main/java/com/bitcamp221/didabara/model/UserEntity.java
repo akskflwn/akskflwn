@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.ColumnDefault;
+import org.springframework.data.annotation.CreatedDate;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -40,6 +41,6 @@ public class UserEntity {
   private boolean ban;
 
   @Column(name = "regist_date", nullable = false)
-//  @ColumnDefault()
+  @CreatedDate
   private LocalDate registDate;
 }
