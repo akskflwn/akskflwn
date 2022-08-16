@@ -13,7 +13,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Entity
 @Table(name = "subscriber")
-public class SubscriberEntity {
+public class SubscriberEntity extends BaseTimeEntity {
 
   @Id
   @Column(name = "id")
