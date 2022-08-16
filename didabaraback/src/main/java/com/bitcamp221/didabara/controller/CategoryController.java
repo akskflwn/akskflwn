@@ -8,9 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/category")
 public class CategoryController {
-//  지워야함 테스트
-//  weohdfukkd9sewug3yh4ujerigfhud
-  int i = 0;
+
 }
 
 
