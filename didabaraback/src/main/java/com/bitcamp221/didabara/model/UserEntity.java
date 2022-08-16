@@ -21,8 +21,9 @@ public class UserEntity extends BaseTimeEntity {
   @Column(name = "id")
   private Long id;
 
-  @Column(name = "username", nullable = false, length = 30, unique = true)
-  private String username;
+  @OneToOne
+  @JoinColumn(name = "username", nullable = false, unique = true)
+  private EmailConfigEntity username;
 
   @Column(name = "password", nullable = false, length = 256)
   private String password;
@@ -37,10 +38,6 @@ public class UserEntity extends BaseTimeEntity {
   @Column(name = "ban", nullable = false)
   @ColumnDefault("false")
   private boolean ban;
-
-  @OneToOne
-  @JoinColumn(name = "email", nullable = false)
-  private EmailConfigEntity email;
 
   @Column(name = "profile_image_url", nullable = false, length = 200)
   private String profileImageUrl;
