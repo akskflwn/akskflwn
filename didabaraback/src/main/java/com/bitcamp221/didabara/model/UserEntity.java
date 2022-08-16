@@ -41,7 +41,7 @@ public class UserEntity extends BaseTimeEntity {
   private boolean ban;
 
 //  프로필 사진 컬럼
-  @Column(name = "profile_image_url", nullable = false)
+  @Column(name = "user_profile_image_url", nullable = false)
 //  @ColumnDefault("기본 프로필 제공 이미지 경로")
-  private String profileImageUrl;
+  private String userProfileImageUrl;
 }

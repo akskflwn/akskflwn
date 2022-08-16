@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.ColumnDefault;
 
 import javax.persistence.*;
 
@@ -32,4 +33,8 @@ public class CategoryEntity extends BaseTimeEntity {
 
   @Column(name = "invite_code", nullable = false)
   private String inviteCode;
+
+  @Column(name = "category_profile_image_url", nullable = false)
+  @ColumnDefault("카테고리 기본 이미지")
+  private String categoryProfileImageUrl;
 }
