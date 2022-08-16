@@ -25,8 +25,8 @@ public class ReplyEntity extends BaseTimeEntity {
   private CategoryItemEntity categoryItemId;
 
   @ManyToOne
-  @JoinColumn(name = "user_id", nullable = false)
-  private SubscriberEntity userId;
+  @JoinColumn(name = "writer_id", nullable = false)
+  private SubscriberEntity writerId;
 
   @Column(name = "content", nullable = false)
   private String content;

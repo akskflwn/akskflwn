@@ -22,15 +22,12 @@ public class CategoryItemEntity extends BaseTimeEntity {
   @Column(name = "id", unique = true, nullable = false)
   private Long id;
 
-  @Column(name = "item_path", nullable = false)
-  private String itemPath;
-
   @ManyToOne
   @JoinColumn(name = "category_id", nullable = false)
   private CategoryEntity categoryId;
 
-  @Column(name = "expired_date", nullable = false)
-  private LocalDate expiredDate;
+  @Column(name = "item_path", nullable = false)
+  private String itemPath;
 
   @Column(name = "title", nullable = false)
   private String title;
@@ -38,7 +35,6 @@ public class CategoryItemEntity extends BaseTimeEntity {
   @Column(name = "content", nullable = false)
   private String content;
 
-  @Column(name = "uploaded_date", nullable = false, updatable = false)
-  @CreatedDate
-  private LocalDate upLocalDate;
+  @Column(name = "expired_date", nullable = false)
+  private LocalDate expiredDate;
 }

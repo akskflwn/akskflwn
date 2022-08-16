@@ -20,16 +20,16 @@ public class CategoryEntity extends BaseTimeEntity {
   @Column(name = "id", unique = true, nullable = false)
   private Long id;
 
-  @Column(name = "title", nullable = false)
-  private String title;
-
   @ManyToOne
   @JoinColumn(name = "host_id", nullable = false)
   private UserEntity host_id;
 
-  @Column(name = "invite_code", nullable = false)
-  private String inviteCode;
+  @Column(name = "title", nullable = false)
+  private String title;
 
   @Column(name = "content", nullable = false)
   private String content;
+
+  @Column(name = "invite_code", nullable = false)
+  private String inviteCode;
 }
