@@ -17,7 +17,8 @@ public class UserDTO {
   private String username;
   private String password;
   private String nickname;
-  private int rank;
+  private int role;
   private boolean ban;
-  private LocalDate registDate;
+  private String email;
+  private String profileImageUrl;
 }

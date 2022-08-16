@@ -16,7 +16,7 @@ import javax.persistence.*;
 public class EmailConfigEntity {
 
   @Id
-  @Column(name = "email", nullable = false)
+  @Column(name = "email", nullable = false, length = 30)
   private String email;
 
   @Column(name = "auth_code", nullable = false, length = 30)

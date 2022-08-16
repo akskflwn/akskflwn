@@ -5,15 +5,14 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.Id;
+
 @Builder
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class CategoryDTO {
+public class EmailConfigDTO {
 
-  private Long id;
-  private Long host_id;
-  private String title;
-  private String content;
-  private String inviteCode;
+  private String email;
+  private String authCode;
 }
