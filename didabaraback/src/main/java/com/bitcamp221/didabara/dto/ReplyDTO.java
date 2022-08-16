@@ -13,6 +13,6 @@ public class ReplyDTO {
 
   private Long id;
   private Long categoryItemId;
-  private Long userId;
+  private Long writerId;
   private String content;
 }

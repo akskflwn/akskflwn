@@ -14,7 +14,9 @@ import java.time.LocalDate;
 public class CategoryItemDTO {
 
   private Long id;
-  private String itemPath;
   private Long categoryId;
+  private String itemPath;
+  private String title;
+  private String content;
   private LocalDate expiredDate;
 }

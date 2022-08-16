@@ -12,7 +12,6 @@ import lombok.Data;
 public class CheckedDTO {
 
   private Long id;
-  private boolean done;
-  private Long userId;
+  private Long checkUserId;
   private Long categoryItemId;
 }
