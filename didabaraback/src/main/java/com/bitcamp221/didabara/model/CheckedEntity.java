@@ -13,7 +13,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "checked")
-public class CheckedEntity {
+public class CheckedEntity extends BaseTimeEntity {
 
   @Id
   @Column(name = "id")
