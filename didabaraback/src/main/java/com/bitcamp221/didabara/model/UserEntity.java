@@ -31,6 +31,7 @@ public class UserEntity extends BaseTimeEntity {
   @Column(name = "nickname", nullable = false, length = 30, unique = true)
   private String nickname;
 
+//  0은 일반 유저, 1은 관리자
   @Column(name = "role", nullable = false)
   @ColumnDefault("0")
   private int role;
@@ -39,6 +40,8 @@ public class UserEntity extends BaseTimeEntity {
   @ColumnDefault("false")
   private boolean ban;
 
+//  프로필 사진 컬럼
   @Column(name = "profile_image_url", nullable = false, length = 200)
+//  @ColumnDefault("기본 프로필 제공 이미지 경로")
   private String profileImageUrl;
 }

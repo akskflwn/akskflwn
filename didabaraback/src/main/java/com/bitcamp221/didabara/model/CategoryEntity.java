@@ -24,11 +24,11 @@ public class CategoryEntity extends BaseTimeEntity {
   @JoinColumn(name = "host_id", nullable = false)
   private UserEntity host_id;
 
-  @Column(name = "title", nullable = false)
-  private String title;
+  @Column(name = "category_title", nullable = false)
+  private String categoryTitle;
 
-  @Column(name = "content", nullable = false)
-  private String content;
+  @Column(name = "category_content", nullable = false)
+  private String categoryContent;
 
   @Column(name = "invite_code", nullable = false)
   private String inviteCode;

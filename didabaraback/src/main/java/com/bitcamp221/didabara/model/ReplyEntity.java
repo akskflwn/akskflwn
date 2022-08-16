@@ -24,10 +24,11 @@ public class ReplyEntity extends BaseTimeEntity {
   @JoinColumn(name = "category_item_id", nullable = false)
   private CategoryItemEntity categoryItemId;
 
+//  리플 작성자의 id 값
   @ManyToOne
   @JoinColumn(name = "writer_id", nullable = false)
   private SubscriberEntity writerId;
 
-  @Column(name = "content", nullable = false)
-  private String content;
+  @Column(name = "reply_content", nullable = false)
+  private String replyContent;
 }
