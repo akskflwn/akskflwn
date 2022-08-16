@@ -5,11 +5,8 @@ import lombok.Builder;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.ColumnDefault;
-import org.springframework.data.annotation.CreatedDate;
 
 import javax.persistence.*;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 @Builder
 @Setter
@@ -41,7 +38,10 @@ public class UserEntity extends BaseTimeEntity {
   @ColumnDefault("false")
   private boolean ban;
 
-  @Column(name = "regist_date", nullable = false)
-  @CreatedDate
-  private LocalDateTime registDate;
+  @OneToOne
+  @JoinColumn(name = "email", nullable = false)
+  private EmailConfigEntity email;
+
+  @Column(name = "profile_image_url", nullable = false, length = 200)
+  private String profileImageUrl;
 }

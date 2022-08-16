@@ -21,10 +21,10 @@ public class CheckedEntity extends BaseTimeEntity {
   private Long id;
 
   @OneToOne
-  @JoinColumn(name = "user_id", nullable = false)
-  private SubscriberEntity userId;
-
-  @OneToOne
   @JoinColumn(name = "category_item_id", nullable = false)
   private CategoryItemEntity categoryItemId;
+
+  @OneToOne
+  @JoinColumn(name = "check_user_id", nullable = false)
+  private SubscriberEntity checkUserId;
 }
