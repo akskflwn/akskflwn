@@ -29,11 +29,11 @@ public class CategoryItemEntity extends BaseTimeEntity {
   @Column(name = "item_path", nullable = false)
   private String itemPath;
 
-  @Column(name = "title", nullable = false)
-  private String title;
+  @Column(name = "item_title", nullable = false, length = 30)
+  private String itemTitle;
 
-  @Column(name = "content", nullable = false)
-  private String content;
+  @Column(name = "item_content", nullable = false)
+  private String itemContent;
 
   @Column(name = "expired_date", nullable = false)
   private LocalDate expiredDate;
