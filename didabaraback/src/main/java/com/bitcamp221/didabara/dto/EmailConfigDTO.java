@@ -5,14 +5,14 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.Id;
+
 @Builder
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ReportDTO {
+public class EmailConfigDTO {
 
-  private Long id;
-  private Long userId;
-  private Long hostId;
-  private String reportCategory;
+    private String email;
+    private String authCode;
 }

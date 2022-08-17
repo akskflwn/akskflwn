@@ -1,6 +1,6 @@
 package com.bitcamp221.didabara.controller;
 
-<<<<<<< HEAD
+
 import com.bitcamp221.didabara.model.UserEntity;
 import com.bitcamp221.didabara.service.UserService;
 import lombok.extern.slf4j.Slf4j;
@@ -9,17 +9,6 @@ import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
-import java.util.stream.Collectors;
-
-@Slf4j
-@RestController
-@RequestMapping
-public class UserController{
-
-=======
-
 import com.bitcamp221.didabara.dto.ResponseDTO;
 import com.bitcamp221.didabara.dto.UserDTO;
 import com.bitcamp221.didabara.model.UserEntity;
@@ -39,7 +28,7 @@ import java.time.LocalDate;
 
 @Slf4j
 @RestController
-@RequestMapping("/auth")
+@RequestMapping
 public class UserController {
 
     @Autowired
@@ -123,5 +112,8 @@ public class UserController {
         }
 
     }
->>>>>>> 53f3ed8b58a6d3964598f019550aeb0424d849ea
+
+
+
 }
+
