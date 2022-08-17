@@ -35,11 +35,40 @@ public class UserEntity {
   @ColumnDefault("0")
   private int role;
 
+
+  public Long getId() {
+    return id;
+  }
+
+  public String getUsername() {
+    return username;
+  }
+
+  public String getPassword() {
+    return password;
+  }
+
+  public String getNickname() {
+    return nickname;
+  }
+
+  public int getRole() {
+    return role;
+  }
+
+  public boolean isBan() {
+    return ban;
+  }
+
+  public LocalDate getRegistDate() {
+    return registDate;
+  }
+
   @Column(name = "ban", nullable = false)
   @ColumnDefault("false")
   private boolean ban;
 
-  @Column(name = "regist_date", nullable = false)
-//  @ColumnDefault()
+  @Column(name = "regist_date", nullable = false )
+//  @ColumnDefault("null")
   private LocalDate registDate;
 }

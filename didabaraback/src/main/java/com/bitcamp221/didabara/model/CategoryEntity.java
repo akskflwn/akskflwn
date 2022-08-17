@@ -27,6 +27,8 @@ public class CategoryEntity {
   @JoinColumn(name = "host_id", nullable = false)
   private UserEntity host_id;
 
+
+
   @Column(name = "invite_code", nullable = false)
   private String inviteCode;
 }
