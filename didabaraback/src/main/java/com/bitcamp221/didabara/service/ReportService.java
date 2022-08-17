@@ -6,4 +6,5 @@ import org.springframework.stereotype.Service;
 @Slf4j
 @Service
 public class ReportService {
+    //지워야할거
 }
